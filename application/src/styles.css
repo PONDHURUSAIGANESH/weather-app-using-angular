@@ -1,0 +1,153 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --blue-1: #0999f8;
+    --blue-2: #044f82;
+    --yellow-1: #e4bc0b;
+    --white: #e1f2fd;
+    --grey-1: #15191e;
+    --shadow-dark: rgb(0,0,0,0.3);
+    --shadow-light: rgba(36, 36, 36, 0.478);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width:100%;
+    height:100vh;
+    background-image:url('https://i.gifer.com/AwA4.gif'); background-repeat:no-repeat;background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 400px;
+    height:80vh;
+    background-color: var(--blue-2);
+    border-radius: 20px;
+    box-shadow:10px 10px 10px var(--shadow-dark);
+}
+
+.upperdata{
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    height:50%;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+
+}
+.lowerdata{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.upperdata img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+}
+.weatherdata{
+    position: relative;
+    z-index:1;
+    width: 100%;
+    height: 100%;
+    background-color: var(--shadow-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.location{
+    color: var(--white);
+    text-align: center;
+    font-size:1.2em;
+}
+
+.temperature{
+    color: var(--white);
+    font-size: 4em;
+    text-align: center;
+    font-weight: 900;
+    
+}
+
+.moreinfo{
+   color:var(--white);
+
+}
+.morcon{
+    flex:1 ;
+    background-color:var(--shadow-light);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top:1em;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.infblk{
+    width:50%;
+    display:flex;
+    flex-direction: row;
+}
+
+.blklabl{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.blklabl img{
+    width: 2.5em;
+}
+.blklabl span{
+    color:var(--white);
+    font-size:0.8em;
+}
+
+.blkvl{
+    width:50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    color: var(--white);
+}
+
+.search{
+    margin-bottom: 1em;
+    text-align: center;
+}
+.search input{
+    background-color: var(--shadow-light);
+    outline: auto;
+    border: #4e95ff;
+    padding: 1em;
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+}

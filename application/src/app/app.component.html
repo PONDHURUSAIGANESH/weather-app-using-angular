@@ -1,0 +1,108 @@
+<!-- <div class="container" *ngIf=" weatherData ">
+    <div class="upperdata">
+        <img src="..\assets\hot.png" *ngIf=" ((weatherData.main.temp)-55) > 15">
+        <img src="..\assets\cold.png" *ngIf=" ((weatherData.main.temp)-55) <= 15">
+        <div class="weatherdata">
+            <div class="location">{{ weatherData.name }}</div>
+            <div class="temperature">{{ ((weatherData.main.temp)-55) | number: '1.0-0'}}°C</div>
+        </div>
+    </div>
+    <div class="lowerdata">
+        <div class="moreinfo">
+            More Information
+        </div>
+        <div class="morcon">
+            <div class="infblk">
+                <div class="blklabl">
+                    <img src="../assets/min.png">
+                    <span>min</span>
+                </div>
+                <div class="blkvl">
+                    {{ weatherData.main.temp_min }}°C
+                </div>
+            </div>
+            <div class="infblk">
+                <div class="blklabl">
+                    <img src="../assets/max.png">
+                    <span>max</span>
+                </div>
+                <div class="blkvl">
+                    {{ weatherData.main.temp_max }}°C
+                </div>
+            </div>
+            <div class="infblk">
+                <div class="blklabl">
+                    <img src="../assets/humidity.png">
+                    <span>humidity</span>
+                </div>
+                <div class="blkvl">
+                    {{ weatherData.main.humidity }}%
+                </div>
+            </div>
+            <div class="infblk">
+                <div class="blklabl">
+                    <img src="../assets/wind.png">
+                    <span>Wind</span>
+                </div>
+                <div class="blkvl">
+                    {{ weatherData.wind.speed }} km/h
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+.
+<div class="container">
+    <div class="upperdata">
+        <img src="..\assets\hot.png" *ngIf=" 14 < 15">
+        <img src="..\assets\cold.png" *ngIf="14 >= 15">
+        <div class="weatherdata">
+            <div class="location">africa</div>
+            <div class="temperature">{{ 54.50 | number: '1.0-0'}}°C</div>
+        </div>
+    </div>
+    <div class="lowerdata">
+        <div class="moreinfo">
+            More Information
+        </div>
+        <div class="morcon">
+            <div class="infblk">
+                <div class="blklabl">
+                    <img src="../assets/min.png">
+                    <span>min</span>
+                </div>
+                <div class="blkvl">
+                    10°C
+                </div>
+            </div>
+            <div class="infblk">
+                <div class="blklabl">
+                    <img src="../assets/max.png">
+                    <span>max</span>
+                </div>
+                <div class="blkvl">
+                    77°C
+                </div>
+            </div>
+            <div class="infblk">
+                <div class="blklabl">
+                    <img src="../assets/humidity.png">
+                    <span>humidity</span>
+                </div>
+                <div class="blkvl">
+                    70%
+                </div>
+            </div>
+            <div class="infblk">
+                <div class="blklabl">
+                    <img src="../assets/wind.png">
+                    <span>Wind</span>
+                </div>
+                <div class="blkvl">
+                    10 km/h
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
